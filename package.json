@@ -1,0 +1,19 @@
+{
+  "name": "simpleassets",
+  "version": "1.0.0",
+  "description": "Testing nft",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "index.js"
+  },
+  "author": "MarcosDK",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "eosjs": "^20.0.3",
+    "node-fetch": "^2.6.0",
+    "path": "^0.12.7",
+    "util": "^0.12.3"
+  }
+}

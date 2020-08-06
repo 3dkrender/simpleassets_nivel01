@@ -64,11 +64,12 @@ module.exports.crearNFT = function (autor) {
 
 /**
  * 
- * @param {*} autor Nombre de la cuenta propietaria y creadora del NFT
+ * @param {*} autor Nombre de la cuenta creadora del NFT
+ * @param {*} owner Nombre de la cuenta propietaria del NFT
  * @param {*} nfts  [Array] de IDs que se desean borrar
  * @param {*} memo  Mensaje de despedida?
  */
-module.exports.burnNFT = function (autor, nfts, memo) {
+module.exports.burnNFT = function (autor, owner, nfts, memo) {
     return new Promise(resolve => {
         api.transact({
             actions: [{
@@ -79,7 +80,7 @@ module.exports.burnNFT = function (autor, nfts, memo) {
                     permission: 'active'
                 }],
                 data: {
-                    owner: autor,
+                    owner: owner,
                     assetids: nfts,
                     memo: memo
                 }

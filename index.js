@@ -4,13 +4,13 @@
 const simpleassets = require('./simpleassets');
 
 // Crear NFT
-simpleassets.crearNFT('kbjqu.waa')
+simpleassets.crearNFT('<nombre-de-usuario>')
     .then(resolve => {
         console.log(resolve);
     });
 
 // Borrar NFT
-// simpleassets.burnNFT('kbjqu.waa', [100000004694043], 'Nos vemos en el nivel 2')
+// simpleassets.burnNFT('<nombre-de-usuario>', [<array-IDs>], 'Nos vemos en el nivel 2')
 //     .then(resolve => {
 //         console.log(resolve);
 //     });

@@ -10,7 +10,7 @@ simpleassets.crearNFT('<nombre-de-usuario>')
     });
 
 // Borrar NFT
-// simpleassets.burnNFT('<nombre-de-usuario>', [<array-IDs>], 'Nos vemos en el nivel 2')
+simpleassets.burnNFT('<nombre-de-autor>', '<nombre-de-propietario>', [<array-IDs>], 'Nos vemos en el nivel 2')
 //     .then(resolve => {
 //         console.log(resolve);
 //     });
